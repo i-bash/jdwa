@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+1. Создать форму HTML5 со следующими элементами:
+
+Имя (до 50 знаков)
+Фамилия (до 50 знаков)
+Дата поездки (не позже 2017-12-31)
+Откуда (выбор из выпадающего списка 3-4 городов)
+Куда (выбор из выпадающего списка 3-4 городов)
+Страховка (да/нет)
+Кнопки ОК, отмена
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form>
+            Имя <input maxlength="50" name="first_name" required><br>
+            Фамилия <input maxlength="50" name="last_name" required><br>
+            Дата поездки <input max="2017-12-31" name="date" required><br>
+            Откуда <input list="cities" name="from" required><br>
+            Куда <input list="cities" name="to" required><br>
+            Страховка<input type="checkbox" name="insurance"><br>
+            <button type="reset">Сброс</button>
+            <button type="submit">ОК</button>
+            <datalist id="cities">
+                <option value="Москва">
+                <option value="Санкт-Петербург">
+                <option value="Старый Оскол">
+            </datalist>
+        </form>
+    </body>
+</html>
